@@ -4,9 +4,6 @@
 #
 #    pip-compile dev-requirements.in
 #
---extra-index-url https://pypi.ngc.nvidia.com
---trusted-host pypi.ngc.nvidia.com
-
 black==22.6.0
     # via -r dev-requirements.in
 bleach==6.1.0
@@ -51,7 +48,7 @@ exceptiongroup==1.2.1
     # via pytest
 faker==13.16.0
     # via -r dev-requirements.in
-filelock==3.14.0
+filelock==3.19.1
     # via
     #   tox
     #   virtualenv
@@ -151,8 +148,11 @@ tox==4.15.0
     #   tox-docker
 tox-docker==5.0.0
     # via -r dev-requirements.in
-typing-extensions==4.12.1
-    # via -r dev-requirements.in
+typing-extensions==4.15.0
+    # via
+    #   -r dev-requirements.in
+    #   black
+    #   virtualenv
 unidecode==1.3.8
     # via cli-ui
 urllib3==1.26.18
@@ -160,7 +160,7 @@ urllib3==1.26.18
     #   -r dev-requirements.in
     #   docker
     #   requests
-virtualenv==20.26.2
+virtualenv==20.36.1
     # via
     #   pre-commit
     #   tox
